@@ -50,4 +50,15 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    // Some email obfuscation to help against web crawlers
+    var emailScrambler = function() {
+        var prefix = "aybikekilic" + 7;
+        var domain = "gmail.com";
+        var complete = prefix + "@" + domain;
+        var element = document.getElementById("email");
+        element.textContent = complete;
+        element.href = "mailto:" + complete;
+    };
+    emailScrambler();
 });
