@@ -10845,17 +10845,23 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
-.page-section {
-  padding: 6rem 0;
+.page-section {  
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
 }
 .page-section .page-section-heading {
-  font-size: 2.25rem;
-  line-height: 2rem;
+  font-size: 2.75rem;
+  line-height: 2.75rem;
 }
 @media (min-width: 992px) {
-  .page-section .page-section-heading {
-    font-size: 3rem;
-    line-height: 2.5rem;
+  .page-section {
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
+  }
+  
+  .page-section-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -11014,7 +11020,7 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
+  padding-top: calc(6rem);
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
@@ -11036,7 +11042,7 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    padding-top: calc(6rem);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
